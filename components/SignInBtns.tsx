@@ -8,23 +8,9 @@ export default function SignInBtns() {
     <>
       <div className="mt-4 p-4 flex flex-col items-center justify-center gap-4">
         <button
-          onClick={() => signIn("github")}
-          className="flex items-center border p-4 rounded-full gap-4 hover:bg-slate-100/25 transition"
-        >
-          <span>
-            <Image
-              src={"/github-logo.svg"}
-              width={30}
-              height={30}
-              alt="GitHub Logo"
-            />
-          </span>
-          Sign In With GitHub
-        </button>
-
-        <button
+          style={{ color: "white" }}
           onClick={() => signIn("google")}
-          className="flex items-center border p-4 rounded-full gap-4 hover:bg-slate-100/25 transition"
+          className="flex  items-center border p-4 rounded-full gap-4 hover:bg-slate-100/25 transition"
         >
           <span>
             <Image

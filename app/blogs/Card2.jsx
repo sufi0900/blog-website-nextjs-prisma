@@ -17,8 +17,7 @@ import {
 } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import CommentIcon from "@mui/icons-material/Comment";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
-import Avatar from "@mui/material/Avatar";
+
 import Link from "next/link";
 import { CalendarMonth, Email, Person, Title } from "@mui/icons-material";
 

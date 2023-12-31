@@ -2,19 +2,12 @@ import React from "react";
 import {
   Card,
   CardContent,
-  Grid,
   Typography,
   Button,
   CardMedia,
-  Chip,
-  Container,
-  List,
-  ListItem,
-  ListItemText,
-  ListItemAvatar,
-  Avatar,
   Box,
 } from "@mui/material";
+import Link from "next/link";
 const RecentBlog = ({
   id,
   author,
@@ -62,10 +55,11 @@ const RecentBlog = ({
             // className="flex"
           >
             {/* <Typography className="bgch"> {category}</Typography> */}
-
-            <Button className="rm-btn " size="small" variant="outlined">
-              Read More
-            </Button>
+            <Link href={`/posts/${id}`}>
+              <Button className="rm-btn " size="small" variant="outlined">
+                Read More
+              </Button>
+            </Link>
           </Box>
         </CardContent>
       </Card>

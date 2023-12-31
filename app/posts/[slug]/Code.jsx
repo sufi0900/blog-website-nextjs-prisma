@@ -1,10 +1,6 @@
 import {
-  Card,
-  CardContent,
-  CardActions,
   Grid,
   Typography,
-  Button,
   IconButton,
   CardMedia,
   Chip,
@@ -12,11 +8,11 @@ import {
   Avatar,
   Box,
 } from "@mui/material";
-
-import { BiBookmark, BiComment, BiHeart } from "react-icons/bi";
+import RecentBlog from "@/app/blogs/RecentBlogs";
+import { BiBookmark } from "react-icons/bi";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import CommentIcon from "@mui/icons-material/Comment";
-import RecentBlog from "@/app/RecentBlogs";
+
 const getPosts = async () => {
   try {
     const res = await fetch(`${process.env.NEXTAUTH_URL}/api/posts`, {
