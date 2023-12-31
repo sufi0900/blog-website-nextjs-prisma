@@ -1,0 +1,451 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --white-text-color: white;
+  --black-text-color: black;
+  --main-bg-color: rgba(1, 145, 255, 1);
+}
+.cardshadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.cardshadow2 {
+  box-shadow: rgb(6, 124, 249) 0px 10px 20px -5px;
+}
+.ts {
+  text-shadow: 1px 1px 1px black;
+}
+.bgch {
+  background: var(--main-bg-color);
+  color: var(--white-text-color);
+  border-radius: 20px;
+  padding: 2px 10px;
+  border: 1px solid rgba(1, 145, 255, 1);
+}
+.bgch2 {
+  background: blue;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: 1px solid rgba(1, 145, 255, 1);
+}
+.bgc {
+  background: var(--main-bg-color);
+  color: var(--white-text-color);
+}
+.category {
+  background: black;
+  color: white;
+  border: 2px solid var(--main-bg-color);
+}
+.category:hover {
+  background: var(--main-bg-color);
+  transition: 0.3s;
+  color: white;
+}
+.bgch2:hover {
+  transition: 0.5s;
+  background: white;
+  color: black;
+}
+.bgch:hover {
+  transition: 0.5s;
+  background: var(--white-text-color);
+  color: var(--black-text-color);
+}
+.readmore {
+  border: 2px solid blue;
+  background-color: blue;
+}
+.readmore:hover {
+  transition: 0.3s;
+  background: white;
+  border-radius: 20px;
+  color: #000;
+}
+.rm-btn {
+  background-color: #3652e1;
+  border-radius: 15px;
+  color: white;
+}
+.rm-btn:hover {
+  color: black;
+}
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  color: var(--white-text-color);
+  background-color: var(--main-bg-color);
+}
+
+body {
+  background: url(./bg.svg);
+}
+
+.circlesvg {
+  background: url(./c14.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+
+.button-1 {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.button-1-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    rgb(1, 119, 209) 0%,
+    rgb(1, 103, 182) 8%,
+    rgb(1, 85, 149) 92%,
+    rgb(0, 49, 86) 100%
+  );
+}
+
+.button-1-front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+
+  background: var(--main-bg-color);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+@media (min-width: 768px) {
+  .button-1-front {
+    font-size: 1.25rem;
+    padding: 12px 42px;
+  }
+}
+
+.button-1:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-1:hover .button-1-front {
+  transform: translateY(-9px);
+  transition: transform 0.3s cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button-1:active .button-1-front {
+  transform: translateY(-2px);
+  transition: transform 0.3s;
+}
+
+.button-1:hover .button-1-shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button-1:active .button-1-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-1:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.wave {
+  background: url(./w4.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+.svgaboutmepage {
+  background: url(./c2.svg);
+  background-repeat: no-repeat;
+
+  background-size: contain;
+
+  position: relative;
+}
+.aboutpagetop {
+  border-radius: 25% 25% 64% 36% / 0% 0% 29% 25%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.aboutpagetop2 {
+  border-radius: 43% 49% 64% 36% / 21% 22% 0% 0%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.aboutpagetop3 {
+  width: 90%;
+  border-radius: 43% 49% 64% 36% / 21% 22% 0% 0%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+  background-color: var(--main-bg-color);
+}
+
+.wave2 {
+  /* border-radius: 0px 10px 200px 200px;
+  -webkit-border-radius: 0px 10px 200px 200px;
+  -moz-border-radius: 0px 10px 200px 200px; */
+  /* border-radius: 0% 100% 100% 0% / 47% 52% 48% 53%; */
+
+  /* clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 35%,
+    100% 100%,
+    80% 90%,
+    50% 100%,
+    20% 90%,
+    0 100%,
+    0 64%,
+    0 0
+  ); */
+
+  background: url(./w7.svg);
+  background-repeat: no-repeat;
+
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.btnNav {
+  background-color: var(--main-bg-color);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  /* Set a high z-index to ensure it's on top of other elements */
+  /* Add any other styling you need */
+}
+.imgcontainer {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  background: url(./i1.jpg);
+  border: 2px solid blue;
+}
+.abouttoptext {
+  border: 3px solid var(--main-bg-color);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  color: #000;
+  background-color: white;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+.abouttoptext2 {
+  border: 3px solid var(--white-text-color);
+  color: #000;
+  background-color: var(--main-bg-color);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+.imgcontainer2 {
+  clip-path: polygon(
+    50% 0%,
+    90% 20%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0% 60%,
+    10% 20%
+  );
+}
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  padding: 10px;
+  text-align: center;
+  color: transparent;
+}
+.swiper-pagination-bullet {
+  padding: 10px;
+  font-size: 0;
+  color: transparent;
+
+  border: 2px solid white;
+
+  text-align: center;
+}
+
+.swiper-pagination {
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+}
+.swiper-pagination-bullet:hover {
+  background-color: rgba(1, 145, 255, 1);
+  color: #e2e8ec;
+}
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #ff014f;
+}
+@media only screen and (min-width: 100px) and (max-width: 479px) {
+  .homepage {
+    background: url();
+  }
+}
+.post__text {
+  color: white;
+}
+.post__text h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.post__text h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.post__text h3 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+.post__text h4 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.post__text h5 {
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+.post__text h6 {
+  font-size: 1.1em;
+  margin-bottom: 0.5em;
+}
+pre {
+  background-color: #282c34;
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  font-family: "Courier New", monospace;
+  overflow-x: auto;
+  font-size: 17px;
+  margin: 10px 0;
+  white-space: pre-wrap; /* Preserve line breaks */
+}
+
+code {
+  font-family: "Courier New", monospace;
+}
+.post__text p {
+  margin-bottom: 1em;
+}
+
+.post__text p {
+  font-size: 33px;
+  line-height: 35px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+}
+/* List styles */
+ul,
+ol {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+/* List item styles */
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Nested list indentation */
+ul ul,
+ol ol {
+  margin-top: 0.5rem;
+}
+
+/* Bullet list styles */
+ul {
+  list-style-type: disc;
+}
+
+/* Numbered list styles */
+ol {
+  list-style-type: decimal;
+}
+
+/* Responsive list styles */
+@media (max-width: 768px) {
+  /* Adjust list styles for smaller screens */
+}
+/* Link styles */
+.post__text a {
+  color: #007bff; /* Set the default link color */
+  text-decoration: underline; /* Remove underline by default */
+  transition: color 0.3s ease; /* Add smooth color transition on hover */
+}
+
+/* Hover state for links */
+.post__text a:hover {
+  color: #0056b3; /* Change color on hover */
+}
+
+/* Visited link styles */
+.post__text a:visited {
+  color: #4c2c92; /* Set color for visited links */
+}
+
+/* Active link styles */
+.post__text a:active {
+  color: #e50000; /* Set color for active links (when clicked) */
+}
