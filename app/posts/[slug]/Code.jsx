@@ -12,7 +12,6 @@ import {
   Avatar,
   Box,
 } from "@mui/material";
-import { Providers } from "./Providers";
 
 import { BiBookmark, BiComment, BiHeart } from "react-icons/bi";
 import FavoriteIcon from "@mui/icons-material/Favorite";
