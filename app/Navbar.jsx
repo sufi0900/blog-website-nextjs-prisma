@@ -132,7 +132,7 @@ function ResponsiveAppBar(props) {
                   className="cursorp Tab8 animate__animated animate__backInLeft"
                 >
                   <Image
-                    src="/logo.jpeg"
+                    src="/logo6.png"
                     style={{ width: "100%", height: "auto" }}
                     alt="logo"
                     width={100}
@@ -182,7 +182,7 @@ function ResponsiveAppBar(props) {
                   }}
                 >
                   <Image
-                    src="/logo.jpeg"
+                    src="/logo6.png"
                     alt="logo"
                     width={100}
                     height={100}
