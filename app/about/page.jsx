@@ -30,9 +30,9 @@ import { Email } from "@mui/icons-material";
 import Navbar from "@/app/Navbar";
 const AboutPage = () => {
   return (
-    <Container style={{ backgroundColor: "rgba(1, 145, 255, 1)", padding: 2 }}>
+    <Container>
       <Navbar />
-      <Box className="flex p-5 ">
+      <Box className="flex  ">
         <br />
         <br />
 
